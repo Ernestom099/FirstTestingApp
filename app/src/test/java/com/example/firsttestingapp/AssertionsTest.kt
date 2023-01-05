@@ -3,6 +3,7 @@ package com.example.firsttestingapp
 import org.junit.Assert.*
 import org.junit.Test
 import kotlin.math.exp
+import kotlin.random.Random
 
 class AssertionsTest {
     @Test
@@ -61,5 +62,12 @@ class AssertionsTest {
         val copyJuan = juan
         assertNotSame(bot,juan)
         assertSame(juan,copyJuan)
+    }
+
+    @Test(timeout = 1000)
+    fun getCitiesTest(){
+        val cities = arrayOf("México","Perú","Argentina")
+        Thread.sleep(Random.nextLong(901,1100))
+        assertEquals(3,cities.size)
     }
 }
