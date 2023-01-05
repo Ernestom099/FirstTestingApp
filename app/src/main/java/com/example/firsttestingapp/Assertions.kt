@@ -10,7 +10,7 @@ class Assertions {
     fun getName(): String {
         return user.name
     }
-
+git
     fun checkHuman(): Boolean {
         return user.isHuman
     }
