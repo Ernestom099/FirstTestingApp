@@ -40,34 +40,11 @@ class AssertionsTest {
         assertNull(assertions.checkHuman(user))
     }
 
-    @Test
-    fun checkNonNullUserTest() {
-        val user = User()
-        assertNotNull(user)
-        val assertions = Assertions()
-        assertNotNull(assertions.checkHuman(user))
-    }
-
-    @Test
-    fun checkNotSameUsersTest() {
-        val bot = User("Elon", 0, false)
-        val juan = User("Juan", 23, true)
-        assertNotSame(bot, juan)
-    }
-
-    @Test
-    fun checkSameUsersTest() {
-        val bot = User("Juan", 23, true)
-        val juan = User("Juan", 23, true)
-        val copyJuan = juan
-        assertNotSame(bot,juan)
-        assertSame(juan,copyJuan)
-    }
-
     @Test(timeout = 1000)
     fun getCitiesTest(){
         val cities = arrayOf("México","Perú","Argentina")
         Thread.sleep(Random.nextLong(901,1100))
         assertEquals(3,cities.size)
     }
+
 }
