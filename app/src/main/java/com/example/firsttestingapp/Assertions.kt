@@ -10,7 +10,7 @@ class Assertions {
     fun getName(): String {
         return user.name
     }
-git
+
     fun checkHuman(): Boolean {
         return user.isHuman
     }
@@ -21,7 +21,7 @@ git
 
     fun isAdult(user: User): Boolean {
         if (!user.isHuman) {
-            return true
+            return false
         }
         return user.age >= 18
     }
