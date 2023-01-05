@@ -1,7 +1,7 @@
 package com.example.firsttestingapp
 
 class Assertions {
-    private val user = User("Ernestom", 26,)
+    private val user = User("Ernesto", 26,)
 
     fun getLuckyNumbers(): Array<Int> {
         return arrayOf(2, 7)
@@ -10,7 +10,7 @@ class Assertions {
     fun getName(): String {
         return user.name
     }
-
+git
     fun checkHuman(): Boolean {
         return user.isHuman
     }
