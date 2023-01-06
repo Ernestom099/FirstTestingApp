@@ -18,8 +18,6 @@ class AssertionsUsersTest {
         println("After")
     }
 
-
-
     @Test
     fun checkNonNullUserTest() {
         assertNotNull(juan)
