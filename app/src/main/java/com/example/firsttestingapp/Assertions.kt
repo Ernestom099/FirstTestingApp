@@ -1,7 +1,14 @@
 package com.example.firsttestingapp
 
+import android.location.Location
+
 class Assertions {
-    private val user = User("Ernesto", 26,)
+    private var location = "US"
+    private val user = User("Ernesto", 26)
+
+    fun setLocation(location: String) {
+        this.location = location
+    }
 
     fun getLuckyNumbers(): Array<Int> {
         return arrayOf(2, 7)
@@ -23,6 +30,10 @@ class Assertions {
         if (!user.isHuman) {
             return false
         }
+
+        if (location == "US")
+            return user.age >= 21
+
         return user.age >= 18
     }
 }

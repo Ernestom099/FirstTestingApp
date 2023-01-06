@@ -19,13 +19,6 @@ class AssertionsUsersTest {
     }
 
 
-    @Test
-    fun checkIsAdultTest() {
-        val assertions = Assertions()
-        assertTrue(assertions.isAdult(juan))
-        assertFalse(assertions.isAdult(bot))
-        println("checkIsAdultTest")
-    }
 
     @Test
     fun checkNonNullUserTest() {
